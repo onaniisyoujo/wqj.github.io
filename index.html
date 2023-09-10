@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-    body {
-      background-image: url("img/back.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-  </style>
-  <title>我爱王庆杰</title>
-</head>
-<body>
-  <h1>我对王庆杰的爱</h1>
-  <p>亲爱的王庆杰，你是我的一切。</p>
-  <p>每天醒来时，我感到无比幸福，因为我知道我可以与你共度美好时光。</p>
-  <p>你的笑容能照亮我的世界，你的声音是我最喜欢的乐曲。</p>
-  <p>当我迷失方向时，你总是在我身边给予我力量和勇气。</p>
-  <p>和你一起的时光是如此的特别，我珍惜我们的每一刻。</p>
-  <p>无论是快乐还是低谷，我都愿意陪伴你度过。</p>
-  <p>我对你的爱是永恒的，无论遇到什么困难，我都会一直支持你。</p>
-  <p>亲爱的王庆杰，在我心中你是独一无二的，我会永远珍视我们的爱。</p>
-  <p>爱你</p>
-  <p>永远的 魔法少女</p>
-  <p>作者: ChatGPT</p>
-  <p>-------------</p>
-  <p>王庆杰，我爱你！    ——某魔法少女如是说</p>
-  <p>-------------</p>
-  <p>Q: 王庆杰(下称杰哥)的女朋友是谁？？？</p>
-  <p>A: <del>丁**</del> <strong>某魔法少女</strong></p>
-  <br>
-  <p>Q: 杰哥是谁？？？</p>
-  <p>A: 美少女</p>
-  <br>
-  <br>
-  <p>未完待续</p>
+  <head>
+    <title>我爱王庆杰</title>
+    <style>
+      body {
+        background-image: url("img/back_index.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
 
-</body>
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-color: #f3f3f3;
+      }
+
+      .container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>亲爱的王庆杰</h1>
+      <p>我想对你说...</p>
+      <button onclick="showMessage()">点击查看</button>
+      <p id="message" style="display: none;"></p>
+    </div>
+
+    <script>
+      function showMessage() {
+        var messageElement = document.getElementById("message");
+        messageElement.innerHTML = "我喜欢你！";
+        messageElement.style.display = "block";
+      }
+    </script>
+  </body>
 </html>
