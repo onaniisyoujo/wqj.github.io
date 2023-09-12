@@ -1,67 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>我爱王庆杰</title>
     <style>
-      body {
-        background-image: url("img/back_index.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        body {
+            background-image: url("img/back_index.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-        background-color: #f3f3f3;
-      }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #f3f3f3;
+        }
 
-      .container {
-        background-color: white;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-      h1 {
-        color: #333;
-      }
+        h1 {
+            color: #333;
+        }
 
-      button {
-        margin-top: 20px;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container" style="width:600px" !important>
-      <h1>亲爱的王庆杰</h1>
-      <p>我想对你说...</p>
-      <button onclick="showMessage()">点击查看</button>
-      <p id="message" style="display: none;"></p>
-      <script src="https://utteranc.es/client.js"
-        repo="moiisu/moiisu.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-      </script>
-      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        <h1>亲爱的王庆杰</h1>
+        <p>我想对你说...</p>
+        <button onclick="showMessage()">点击查看</button>
+        <p id="message" style="display: none;"></p>
+        <script src="https://utteranc.es/client.js" repo="moiisu/moiisu.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+        </script>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <span id="busuanzi_container_site_pv">本页面总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+        <script>
+            // 获取当前日期
+            var now = new Date();
+            // 设置目标日期为下一个6月30日
+            var targetDate = new Date(now.getFullYear(), 5, 30);
+
+            // 如果当前日期已经是6月30日或之后
+            if (now.getMonth() > 5 || (now.getMonth() === 5 && now.getDate() >= 30)) {
+                // 将目标日期设置为明年的6月30日
+                targetDate.setFullYear(targetDate.getFullYear() + 1);
+            }
+
+            // 计算距离目标日期的天数差值
+            var timeDiff = targetDate.getTime() - now.getTime();
+            var daysRemaining = Math.ceil(timeDiff / (1000 * 3600 * 24)); // 将毫秒转换为天
+
+            // 检查是否是6月30日
+            if (now.getMonth() === 5 && now.getDate() === 30) {
+                document.getElementById("message").innerHTML = "杰哥生日快乐！";
+            } else {
+                document.getElementById("message").innerHTML = "距杰哥的生日还有" + daysRemaining + "天";
+            }
+            document.getElementById("message").style.display = "block";
+        </script>
+
+
     </div>
 
     <script>
-      function showMessage() {
-        var messageElement = document.getElementById("message");
-        messageElement.innerHTML = "我喜欢你！";
-        messageElement.style.display = "block";
-      }
+        function showMessage() {
+            var messageElement = document.getElementById("message");
+            messageElement.innerHTML = "我喜欢你！";
+            messageElement.style.display = "block";
+        }
     </script>
-  </body>
+</body>
+
 </html>
