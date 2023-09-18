@@ -3,46 +3,123 @@
 
 <head>
     <title>我爱王庆杰</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             background-image: url("img/back_index.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             text-align: center;
-            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        /* 设置默认的字体大小 */
+        .welcome-text {
+            font-size: 100px;
+            color: black;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0);
+            padding: 20px;
         }
 
         .container {
-            background-color: white;
-            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         h1 {
             color: #333;
+            font-size: 24px;
+            animation: rainbowText 5s linear infinite;
+        }
+
+        @keyframes rainbowText {
+            0% {
+                color: red;
+            }
+
+            14% {
+                color: orange;
+            }
+
+            28% {
+                color: yellow;
+            }
+
+            42% {
+                color: green;
+            }
+
+            57% {
+                color: blue;
+            }
+
+            71% {
+                color: indigo;
+            }
+
+            85% {
+                color: violet;
+            }
+
+            100% {
+                color: red;
+            }
         }
 
         button {
             margin-top: 20px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 16px;
             border-radius: 5px;
             background-color: #4caf50;
             color: white;
             border: none;
             cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        /* 使用媒体查询来设置移动设备的字体大小 */
+        @media (max-width: 767px) {
+            .welcome-text {
+                font-size: 70px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container" style="width:600px" !important>
+    <div class="welcome-text">王庆杰，我爱你！</div>
+    <div class="container">
         <h1>亲爱的王庆杰</h1>
         <p>我想对你说...</p>
         <button onclick="showMessage()">点击查看</button>
@@ -75,8 +152,6 @@
             }
             document.getElementById("message").style.display = "block";
         </script>
-
-
     </div>
 
     <script>
