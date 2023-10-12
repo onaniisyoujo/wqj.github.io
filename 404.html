@@ -37,14 +37,26 @@
   <br>
   <p>未完待续</p>
   <p>-------------</p>
-  <p>评论区: (需要使用Github账号登录)</p>
-  <script src="https://utteranc.es/client.js"
-    repo="moiisu/moiisu.github.io"
-    issue-term="pathname"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
-  </script>
+  <p>评论区:</p>
+  <div id="vcomments">
+            </div>
+            <script src="//cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js">
+            </script>
+            <script>
+              new Valine({
+                             el: '#vcomments',
+                             appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
+                             appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
+                             placeholder: '请留下您的评论...',
+                             notify: false,
+                             verify: false,
+                             avatar: 'mm',
+                             pageSize: 10,
+                             recordIP: true,
+                             path: window.location.pathname,
+                             serverURLs: 'https://api.miku.run.place',
+                          });
+             </script>
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <span id="busuanzi_container_site_pv">本页面总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 </body>

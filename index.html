@@ -125,8 +125,25 @@
         <button onclick="showMessage()">点击查看</button>
         <p id="message" style="display: none;"></p>
         <p><a href="https://我爱王庆杰.work.gd/game">玩♂杰哥</a></p>
-        <script src="https://utteranc.es/client.js" repo="moiisu/moiisu.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
-        </script>
+        <div id="vcomments">
+            </div>
+            <script src="//cdn.jsdelivr.net/npm/valine@1.5.1/dist/Valine.min.js">
+            </script>
+            <script>
+              new Valine({
+                             el: '#vcomments',
+                             appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
+                             appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
+                             placeholder: '请留下您的评论...',
+                             notify: false,
+                             verify: false,
+                             avatar: 'mm',
+                             pageSize: 10,
+                             recordIP: true,
+                             path: window.location.pathname,
+                             serverURLs: 'https://api.miku.run.place',
+                          });
+             </script>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         <span id="busuanzi_container_site_pv">本页面总访问量<span id="busuanzi_value_site_pv"></span>次</span>
         <script>
