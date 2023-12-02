@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 
@@ -8,9 +9,9 @@
     <style>
         body {
             background-image: url("img/back_index.jpg");
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: cover;
-            display: flex;
+            /* display: flex; */
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -33,6 +34,8 @@
         }
 
         .container {
+            position: relative;
+            margin: auto;
             background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 10px;
@@ -41,7 +44,8 @@
             max-width: 600px;
             animation: fadeIn 2s ease;
         }
-
+        
+        
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -51,7 +55,7 @@
                 opacity: 1;
             }
         }
-
+        
         h1 {
             color: #333;
             font-size: 24px;
@@ -115,6 +119,14 @@
                 font-size: 70px;
             }
         }
+
+        #pfont {
+            font-size: 100px;
+            background-color: pink;
+            border-radius: 20px; /* 设置圆角半径 */
+            padding: 10px; /* 设置内边距 */
+        }
+
     </style>
 </head>
 
@@ -123,7 +135,11 @@
     <div class="container">
         <h1>王庆杰，我爱你！</h1>
         <p id="message" style="display: none;"></p>
+        <p id="pfont">王庆杰，</p>
+        <p id="pfont">我爱你！</p>
+        <p id="pfont">——丁明月</p>
         <p><a href="https://我爱王庆杰.work.gd/game">玩♂杰哥</a></p>
+        <br />
         <p><a href="/img/ydz.mp4">杨德忠跳舞</a></p>
         <div id="vcomments">
             </div>
@@ -135,8 +151,6 @@
                              appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
                              appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
                              placeholder: '请留下您的评论...',
-                             notify: false,
-                             verify: false,
                              avatar: 'mp',
                              pageSize: 10,
                              recordIP: true,
