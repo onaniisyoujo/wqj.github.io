@@ -23,7 +23,7 @@ body {
 #obstacle {
     width: 59px; /* 障碍物的宽度 */
     height: 59px; /* 障碍物的高度 */
-    background-image: url("img/yue.png"); /* 设置障碍物的背景图片 */
+    background-image: url("/img/yue.png"); /* 设置障碍物的背景图片 */
     background-size: cover;
     position: absolute;
     bottom: 0;
