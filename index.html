@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -120,7 +118,7 @@
             }
         }
 
-        #pfont {
+        .pfont {
             font-size: 100px;
             background-color: pink;
             border-radius: 20px; /* 设置圆角半径 */
@@ -135,29 +133,29 @@
     <div class="container">
         <h1>王庆杰，我爱你！</h1>
         <p id="message" style="display: none;"></p>
-        <p id="pfont">王庆杰，</p>
-        <p id="pfont">我爱你！</p>
-        <p id="pfont">——丁明月</p>
-        <p><a href="https://我爱王庆杰.work.gd/game">玩♂杰哥</a></p>
+        <p class="pfont">王庆杰，</p>
+        <p class="pfont">我爱你！</p>
+        <p class="pfont">——丁明月</p>
+        <p><a href="/eatcat">吃掉小安国</a></p>
         <br />
         <p><a href="/img/ydz.mp4">杨德忠跳舞</a></p>
         <div id="vcomments">
-            </div>
-            <script src="//cdn.staticfile.org/valine/1.5.1/Valine.min.js">
-            </script>
-            <script>
-              new Valine({
-                             el: '#vcomments',
-                             appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
-                             appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
-                             placeholder: '请留下您的评论...',
-                             avatar: 'mp',
-                             pageSize: 10,
-                             recordIP: true,
-                             path: window.location.pathname,
-                             serverURLs: 'https://api.miku.run.place',
-                          });
-             </script>
+        </div>
+        <script src="//cdn.staticfile.org/valine/1.5.1/Valine.min.js">
+        </script>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
+                appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
+                placeholder: '请留下您的评论...',
+                avatar: 'mp',
+                pageSize: 10,
+                recordIP: true,
+                path: window.location.pathname,
+                serverURLs: 'https://api.miku.run.place',
+            });
+        </script>
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
         <span id="busuanzi_container_site_pv">本页面总访问量<span id="busuanzi_value_site_pv"></span>次</span>
         <script>
