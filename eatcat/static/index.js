@@ -746,3 +746,33 @@ function stair() {
     len = (__k - 1) * 2;
     gameRestart();
 }
+
+// custom
+
+function showImg1(){
+    url = './static/image/1.png'
+}
+
+function showImg2(){
+    url = './static/image/2.png'
+}
+
+function showImg3(){
+    url = './static/image/3.png'
+}
+
+function showImg4(){
+    url = './static/image/4.jpg'
+}
+
+function showImg5(){
+    url = './static/image/5.jpeg'
+}
+
+function showImg6(){
+    url = './static/image/6.png'
+}
+
+function showImg7(){
+    url = './static/image/7.png'
+}
